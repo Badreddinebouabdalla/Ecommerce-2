@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <a href="index.html"><div class="logo">E-commmerce</div></a>
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="Account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/shopping-cart.svg" width="25px"></a>
+                <img src="images/align-justify.svg" width="25px" class="menu-icon" onclick="menuToggle()">
+            </div>
+        </div>
+    </div>
+    <!--------------------Account Page------------------------->
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/Hand coding-amico.svg">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="indicator"></hr>
+                        </div>
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn" >Login</button>
+                            <a href="">Forgot password</a>
+                        </form>
+                        <form id="RegisterForm">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="password">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="About">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="images/badge-google-play.png">
+                        <img src="images/badge-app-store.png" height="38px">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/galery.svg" height="70px" width="100%" style="background: white;">
+                    <p>Our Purpose is To sustainably Make the Pleasure and Benefits of Sports Accessible to the Many</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href=""> Coupons </a></li>
+                        <li><a href=""> Blog Post </a></li>
+                        <li><a href=""> Return Policy </a></li>
+                        <li><a href=""> Join Affiliate </a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href=""> Facebook </a></li>
+                        <li><a href=""> Twitter </a></li>
+                        <li><a href=""> Instagram </a></li>
+                        <li><a href=""> Youtube </a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2022 - Badreddine Bouabdallah</p>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
